@@ -1,0 +1,31 @@
+{
+  "name": "gmoji-commit",
+  "version": "1.0.0",
+  "description": "github commit with emoji",
+  "main": "index.mjs",
+  "bin": {
+    "gmoji-commit": "index.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahidulsaeid/gmoji-commit.git"
+  },
+  "keywords": [
+    "github",
+    "commit"
+  ],
+  "author": "Jahidul Islam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jahidulsaeid/gmoji-commit/issues"
+  },
+  "homepage": "https://github.com/jahidulsaeid/gmoji-commit#readme",
+  "dependencies": {
+    "autocomplete": "^0.0.1",
+    "inquirer": "^9.2.11",
+    "inquirer-autocomplete-prompt": "^3.0.1"
+  }
+}
