@@ -13,7 +13,7 @@ const questions = [
   {
     type: "list",
     name: "action",
-    message: "What would you like to do?",
+    message: "",
     choices: actions,
   },
 ];
@@ -44,7 +44,7 @@ function provideSuggestion(action) {
     .prompt({
       type: "input",
       name: "suggestion",
-      message: `Suggested command for "${action}":`,
+      // message: `Suggested command for "${action}":`,
       default: "git add . && git commit -m ':bug: - Fix a bug'",
     })
     .then((answer) => {
