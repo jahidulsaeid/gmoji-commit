@@ -1,9 +1,5 @@
 #!/usr/bin/env node
-
-// const { exec } = require('child_process');
 import { exec } from "child_process";
-// const readline = require('readline');
-// const inquirer = require('inquirer');
 import inquirer from "inquirer";
 
 const actions = [
@@ -49,7 +45,7 @@ function provideSuggestion(action) {
       type: "input",
       name: "suggestion",
       message: `Suggested command for "${action}":`,
-      default: "git commit -m ':bug: - Fix a bug'",
+      default: "git add . && git commit -m ':bug: - Fix a bug'",
     })
     .then((answer) => {
       const suggestedCommand = answer.suggestion;
